@@ -1,0 +1,812 @@
+OUT_DIR = Some(C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release\build\icasadi_nmpc_open-d9c045b8eadaae41\out)
+OPT_LEVEL = Some(3)
+TARGET = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=VCINSTALLDIR
+VCINSTALLDIR = None
+cargo:rerun-if-env-changed=VSTEL_MSBuildProjectFullPath
+VSTEL_MSBuildProjectFullPath = None
+cargo:rerun-if-env-changed=VSCMD_ARG_VCVARS_SPECTRE
+VSCMD_ARG_VCVARS_SPECTRE = None
+cargo:rerun-if-env-changed=WindowsSdkDir
+WindowsSdkDir = None
+cargo:rerun-if-env-changed=WindowsSDKVersion
+WindowsSDKVersion = None
+cargo:rerun-if-env-changed=LIB
+LIB = None
+PATH = Some(C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release\deps;C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release;C:\Users\heeir\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib;C:\gurobi1202\win64\bin;C:\Program Files\Microsoft HPC Pack 2008 R2\Bin\;C:\mingw64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\MATLAB\R2024b\bin;C:\Program Files\MATLAB\R2023a\bin;C:\Program Files\MATLAB\R2022b\bin;C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\util\elf2img\;C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\ARM GCC\bin\;C:\Users\heeir\.cargo\bin;C:\Users\heeir\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\heeir\AppData\Local\Programs\Python\Python311\;C:\Users\heeir\AppData\Local\Microsoft\WindowsApps;C:\Users\heeir\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\heeir\AppData\Roaming\npm;C:\Users\heeir\.dotnet\tools;C:\intelFPGA_lite\23.1std\questa_fse\win64;C:\Program Files\CMake\bin;C:\Users\heeir\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\heeir\AppData\Local\Pandoc\;c:\Users\heeir\.vscode\extensions\ms-python.debugpy-2025.10.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\heeir\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\heeir\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin)
+cargo:rerun-if-env-changed=INCLUDE
+INCLUDE = None
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CC_x86_64-pc-windows-msvc
+CC_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_x86_64_pc_windows_msvc
+CC_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+DEBUG = Some(false)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+CARGO_ENCODED_RUSTFLAGS = Some()
+OUT_DIR = Some(C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release\build\icasadi_nmpc_open-d9c045b8eadaae41\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+OUT_DIR = Some(C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release\build\icasadi_nmpc_open-d9c045b8eadaae41\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+OUT_DIR = Some(C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release\build\icasadi_nmpc_open-d9c045b8eadaae41\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+OUT_DIR = Some(C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release\build\icasadi_nmpc_open-d9c045b8eadaae41\out)
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+TARGET = Some(x86_64-pc-windows-msvc)
+CARGO_CFG_TARGET_FEATURE = Some(cmpxchg16b,fxsr,sse,sse2,sse3)
+HOST = Some(x86_64-pc-windows-msvc)
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_pc_windows_msvc
+CFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-pc-windows-msvc
+CFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+auto_casadi_cost.c
+extern/auto_casadi_cost.c(58): warning C4668: '__STDC_VERSION__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+extern/auto_casadi_cost.c(67): warning C4668: '__STDC_VERSION__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+extern/auto_casadi_cost.c(82): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_cost.c(82): warning C4100: 'w': unreferenced formal parameter
+extern/auto_casadi_cost.c(82): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_casadi_cost.c(2300): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_cost.c(2304): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_cost.c(2311): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_cost.c(2327): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1508) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1512) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1515) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1516) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1524) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1527) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1528) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1538) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1540) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1541) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1551) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1553) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1554) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1564) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1566) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1567) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1577) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1579) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1580) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1590) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1592) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1593) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1603) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1605) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1606) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1616) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1618) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1619) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1629) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1631) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1632) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1642) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1644) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1645) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1655) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1657) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1658) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1668) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1670) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1671) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1681) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1683) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1684) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1694) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1696) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1697) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1707) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1709) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1710) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1720) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1722) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1723) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1733) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1735) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1736) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1746) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1748) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1749) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1759) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1761) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1762) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1772) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1774) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1775) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1785) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1787) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1788) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1798) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1800) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1801) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1811) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1813) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1814) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1824) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1826) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1827) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1837) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1839) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1840) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1850) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1852) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1853) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1863) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1865) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1866) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1876) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1878) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1879) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1889) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1891) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1892) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1902) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1904) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1905) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1915) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1917) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1918) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1928) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1930) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1931) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1941) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1943) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1944) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1954) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1956) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1957) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1967) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1969) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1970) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1980) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1982) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1983) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1993) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1995) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(1996) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2006) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2008) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2009) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2019) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2021) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2022) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2032) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2034) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2035) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2045) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2047) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2048) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2058) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2060) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2061) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2071) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2073) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2074) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2084) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2086) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2087) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2097) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2099) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2100) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2110) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2112) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2113) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2123) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2125) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2126) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2136) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2138) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2139) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2149) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2151) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2152) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2162) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2164) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2165) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2175) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2177) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2178) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2188) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2190) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2191) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2201) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2203) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2204) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2214) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2216) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2217) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2227) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2229) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2230) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2240) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2242) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2243) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2253) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2255) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2256) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2266) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2268) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2269) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2279) : warning C4711: function 'open_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2281) : warning C4711: function 'open_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_cost.c(2282) : warning C4711: function 'open_phi_nmpc_open_sq' selected for automatic inline expansion
+auto_casadi_grad.c
+extern/auto_casadi_grad.c(56): warning C4668: '__STDC_VERSION__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+extern/auto_casadi_grad.c(65): warning C4668: '__STDC_VERSION__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+extern/auto_casadi_grad.c(77): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_grad.c(77): warning C4100: 'w': unreferenced formal parameter
+extern/auto_casadi_grad.c(77): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_casadi_grad.c(4730): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_grad.c(4734): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_grad.c(4741): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_grad.c(4757): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(590) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(597) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(602) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1008) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1013) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1879) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1884) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1926) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1931) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1962) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(1967) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2012) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2017) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2060) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2065) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2110) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2115) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2158) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2163) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2208) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2213) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2256) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2261) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2306) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2311) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2354) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2359) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2404) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2409) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2452) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2457) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2502) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2507) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2550) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2555) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2600) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2605) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2648) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2653) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2698) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2703) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2746) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2751) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2796) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2801) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2844) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2849) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2894) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2899) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2942) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2947) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2992) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(2997) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3040) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3045) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3090) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3095) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3138) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3143) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3188) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3193) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3236) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3241) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3286) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3291) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3334) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3339) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3384) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3389) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3432) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3437) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3482) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3487) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3530) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3535) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3580) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3585) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3628) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3633) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3678) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3683) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3726) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3731) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3776) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3781) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3824) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3829) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3874) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3879) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3922) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3927) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3972) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(3977) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4020) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4025) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4070) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4075) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4118) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4123) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4168) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4173) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4216) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4221) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4266) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4271) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4314) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4319) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4364) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4369) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4412) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4417) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4462) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4467) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4510) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4515) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4560) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4565) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4608) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4613) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4658) : warning C4711: function 'open_grad_phi_nmpc_open_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_grad.c(4663) : warning C4711: function 'open_grad_phi_nmpc_open_fmin' selected for automatic inline expansion
+auto_casadi_mapping_f2.c
+extern/auto_casadi_mapping_f2.c(57): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f2.c(57): warning C4100: 'w': unreferenced formal parameter
+extern/auto_casadi_mapping_f2.c(57): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_casadi_mapping_f2.c(57): warning C4100: 'arg': unreferenced formal parameter
+extern/auto_casadi_mapping_f2.c(72): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f2.c(76): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f2.c(83): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f2.c(99): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_casadi_mapping_f2.c(65) : warning C4711: function 'open_mapping_f2_nmpc_open_f0' selected for automatic inline expansion
+auto_casadi_mapping_f1.c
+extern/auto_casadi_mapping_f1.c(55): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f1.c(55): warning C4100: 'w': unreferenced formal parameter
+extern/auto_casadi_mapping_f1.c(55): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_casadi_mapping_f1.c(431): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f1.c(435): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f1.c(442): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_casadi_mapping_f1.c(458): warning C4065: switch statement contains 'default' but no 'case' labels
+auto_preconditioning_functions.c
+extern/auto_preconditioning_functions.c(62): warning C4668: '__STDC_VERSION__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+extern/auto_preconditioning_functions.c(71): warning C4668: '__STDC_VERSION__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+extern/auto_preconditioning_functions.c(82): warning C4668: '__STDC_VERSION__' is not defined as a preprocessor macro, replacing with '0' for '#if/#elif'
+extern/auto_preconditioning_functions.c(95): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(95): warning C4100: 'w': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(95): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2412): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2416): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2423): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2439): warning C4065: switch statement contains 'default' but no 'case' labels
+extern/auto_preconditioning_functions.c(2489): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2489): warning C4100: 'w': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2489): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2489): warning C4100: 'arg': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2563): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2567): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2574): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2590): warning C4065: switch statement contains 'default' but no 'case' labels
+extern/auto_preconditioning_functions.c(2640): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2640): warning C4100: 'w': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2640): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2640): warning C4100: 'arg': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2655): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2659): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2666): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2682): warning C4065: switch statement contains 'default' but no 'case' labels
+extern/auto_preconditioning_functions.c(2732): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2732): warning C4100: 'w': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(2732): warning C4100: 'iw': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(4652): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(4656): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(4663): warning C4100: 'mem': unreferenced formal parameter
+extern/auto_preconditioning_functions.c(4679): warning C4065: switch statement contains 'default' but no 'case' labels
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2648) : warning C4711: function 'auto_preconditioning_functions_f2' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(857) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(858) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1566) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1567) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1580) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1581) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1595) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1596) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1609) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1610) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1624) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1625) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1638) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1639) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1653) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1654) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1667) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1668) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1682) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1683) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1696) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1697) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1711) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1712) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4154) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1725) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1726) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1740) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1741) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1754) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4155) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4157) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4159) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4160) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4163) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4164) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1755) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1769) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1770) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1783) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4165) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1784) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4169) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1798) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1799) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4172) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1812) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4173) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1813) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4177) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1827) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4180) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1828) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4181) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1841) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4185) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1842) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4188) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1856) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4189) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1857) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4193) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1870) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4196) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1871) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4197) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1885) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4201) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1886) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4204) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1899) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4205) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1900) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4209) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1914) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4212) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1915) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4213) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1928) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4217) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1929) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4220) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1943) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4221) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1944) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4225) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4228) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1957) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4229) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1958) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4233) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1972) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1973) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1986) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(1987) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4236) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2001) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4237) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2002) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4241) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2015) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4244) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2016) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4245) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2030) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4249) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2031) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4252) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2044) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4253) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2045) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4257) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2059) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4260) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2060) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4261) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2073) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4265) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2074) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4268) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2088) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4269) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2089) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2102) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2103) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4273) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2117) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4276) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2118) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4277) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2131) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4281) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2132) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4284) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2146) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4285) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2147) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4289) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2160) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4292) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2161) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4293) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2175) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4297) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2176) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4300) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2189) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4301) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2190) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4305) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2204) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4308) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2205) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4309) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2218) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4313) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2219) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4316) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2233) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4317) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2234) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4321) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2247) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4324) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2248) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4325) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2262) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4329) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2263) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4332) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2276) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4333) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2277) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4337) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2291) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4340) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2292) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4341) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2305) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4345) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2306) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4348) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2320) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4349) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2321) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4353) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2334) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4356) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2335) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4357) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2349) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4361) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2350) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4364) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2363) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4365) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2364) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4369) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2378) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4372) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2379) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4373) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2388) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4377) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2389) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4380) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2396) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4381) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2397) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4385) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(2398) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4388) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4389) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4393) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4396) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4397) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4401) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4404) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4405) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4409) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4412) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4413) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4417) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4420) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4421) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4425) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4428) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4429) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4433) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4436) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4437) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4441) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4444) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4445) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4449) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4452) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4453) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4457) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4460) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4461) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4465) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4468) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4469) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4473) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4476) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4477) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4481) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4484) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4485) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4489) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4492) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4493) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4497) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4500) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4501) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4505) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4508) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4509) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4513) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4516) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4517) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4521) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4524) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4525) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4529) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4532) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4533) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4537) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4540) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4541) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4545) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4548) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4549) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4553) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4556) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4557) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4561) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4564) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4565) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4569) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4572) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4573) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4577) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4580) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4581) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4585) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4588) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4589) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4593) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4596) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4597) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4601) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4604) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4605) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4609) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4612) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4613) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4617) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4620) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4621) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4625) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4628) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4629) : warning C4711: function 'auto_preconditioning_functions_sq' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4633) : warning C4711: function 'auto_preconditioning_functions_fabs' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4634) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4638) : warning C4711: function 'auto_preconditioning_functions_fmin' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\auto_preconditioning_functions.c(4639) : warning C4711: function 'auto_preconditioning_functions_fmax' selected for automatic inline expansion
+interface.c
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\interface.c(656) : warning C4711: function 'preconditioning_w1_function_nmpc_open' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\interface.c(657) : warning C4711: function 'preconditioning_w2_function_nmpc_open' selected for automatic inline expansion
+C:\Users\heeir\ThesisMPC\build\nmpc_open\icasadi_nmpc_open\extern\interface.c(658) : warning C4711: function 'preconditioning_w_cost_function_nmpc_open' selected for automatic inline expansion
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rustc-link-search=native=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\atlmfc\lib\x64
+cargo:rustc-link-lib=static=icasadi
+cargo:rustc-link-search=native=C:\Users\heeir\ThesisMPC\build\nmpc_open\target\release\build\icasadi_nmpc_open-d9c045b8eadaae41\out
+cargo:rerun-if-changed=extern/auto_casadi_cost.c
+cargo:rerun-if-changed=extern/auto_casadi_grad.c
+cargo:rerun-if-changed=extern/auto_casadi_mapping_f2.c
+cargo:rerun-if-changed=extern/auto_casadi_mapping_f1.c
+cargo:rerun-if-changed=extern/auto_preconditioning_functions.c
+cargo:rerun-if-changed=extern/interface.c
