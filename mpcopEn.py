@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import casadi as ca
 import opengen as og
 import path_planning
-
+import yaml
 
 class Parameters:
     def __init__(self):
@@ -15,7 +15,7 @@ class Parameters:
         self.ang_acc_min = -3.0
         self.lin_acc_max = 1
         self.lin_acc_min = -1
-        self.N_hor = 70
+        self.N_hor = 50
         self.dt = 0.1
         
         # Weights 
@@ -26,8 +26,8 @@ class Parameters:
         self.pos_dev = 1.0
         self.vel_dev = 10.0
         self.heading_dev = 1.0 
-        self.termcost_pos = 10.0
-        self.termcost_heading = 10.0 
+        self.termcost_pos = 200.0
+        self.termcost_heading = 50.0 
 
         #Helpers 
         self.n_states = 3
@@ -35,13 +35,11 @@ class Parameters:
 
 
 def generate_reftrajectory(p:Parameters,init_path):
-    # Generate a simple circular trajectory as a reference
-    dt = p.dt # Time step for the reference trajectory
-    T = 10  # Total time
-    t = np.arange(0.0, T+dt, dt)
     x_ref = init_path[:,0]
     y_ref = init_path[:,1] 
-    theta_ref = np.arctan2(np.gradient(y_ref), np.gradient(x_ref))
+    dx = np.diff(x_ref,prepend=init_path[0,0])
+    dy = np.diff(y_ref,prepend=init_path[0,1])
+    theta_ref = np.unwrap(np.arctan2(dy,dx))
     return np.vstack((x_ref, y_ref, theta_ref)).T
 
 def dyn_prop(x,u, p:Parameters):
@@ -174,7 +172,8 @@ def plot_trajectory(ref_trajectory):
 # ---------- Main Simulation Loop ----------
 if __name__ == '__main__':
     p = Parameters()
-    path = path_planning.gen_path()
+    config = 'test_config2'
+    path, obstacles, boundary = path_planning.gen_path(config)
     build_dir, name = open_solver(p)
     mng = start_manager(build_dir, name)
 
@@ -182,7 +181,9 @@ if __name__ == '__main__':
     print(f'No of waypoints {ref_trajectory.shape}')
     x = ref_trajectory[0] # Initial state
     u_prev = np.array([0.0, 0.0]) # Initial previous command
-    sim_time = len(ref_trajectory)*p.dt # Total simulation time
+    sim_time = len(ref_trajectory)*p.dt # Simulation time
+    x_end = ref_trajectory[-1]
+    end_thres = 0.25
     
     steps = int(sim_time / p.dt)
     states = np.zeros((steps, p.n_states))
@@ -213,7 +214,7 @@ if __name__ == '__main__':
         states[i,:] = x
         commands[i,:] = u_prev
         sim_traj.append(x)
-    
+
     mng.kill() # stop rust
     print("Done. Collected", len(sim_traj), "states.")
 
@@ -223,6 +224,9 @@ plt.figure()
 sim_traj = np.array(sim_traj)
 plt.plot(sim_traj[:,0], sim_traj[:,1], label='Simulated Trajectory')
 plt.plot(ref_trajectory[:,0], ref_trajectory[:,1], 'r--', label='Reference Trajectory')
+plt.plot(*zip(*boundary, boundary[0]), "k-")
+for hole in obstacles:
+    plt.plot(*zip(*hole, hole[0]), "k-")
 plt.xlabel('X Position')
 plt.ylabel('Y Position')
 plt.title('Simulated Trajectory')

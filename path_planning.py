@@ -4,6 +4,7 @@ from extremitypathfinder import PolygonEnvironment
 import matplotlib.pyplot as plt
 import numpy as np
 import pyclipper
+import yaml
 
 SCALE = 1000
 
@@ -61,7 +62,7 @@ def shrink_boundary(boundary, vehicle_width):
     shrunkpath = path_offset(ogpath,-vehicle_width)
     return make_ccw(from_clipper(shrunkpath))
 
-def path_interpolate(path,ds = 0.2):
+def path_interpolate(path,ds = 0.1):
     '''
     path = 2d array of shape (N,2)
     ds = desired distance between points
@@ -91,25 +92,16 @@ def path_interpolate(path,ds = 0.2):
 
     return np.column_stack([x,y])
 
-def gen_path():
+def gen_path(config):
     #Main part
     environment = PolygonEnvironment()
 
-    # counter clockwise vertex numbering!
-    boundary_coordinates = [(0.0, 0.0), (50.0, 0.0), (50.0, 50.0), (0.0, 50.0)]
+    with open('params.yaml','r') as file:
+        config_data = yaml.safe_load(file)
 
-    # clockwise numbering!
-    # Holes (clockwise, open — no repeated last=first)
-    list_of_holes = [
-        # Hole 1: square near bottom-left (CW)
-        [(12.0, 18.0), (18.0, 18.0), (18.0, 12.0), (12.0, 12.0)],
-
-        # Hole 2: pentagon center-right (CW)
-        [(32.0, 26.0), (36.0, 30.0), (40.0, 26.0), (38.0, 22.0), (34.0, 22.0)],
-
-        # Hole 3: triangle upper-left (CW)
-        [(6.0, 44.0), (12.0, 42.0), (8.0, 35.0)],
-    ]
+    boundary_coordinates = config_data[config]['boundary_coordinates']
+    list_of_holes = config_data[config]['list_of_holes']
+    
     obstacles_processed = inflate_obstacles(list_of_holes, 0.5)
     boundary_processed = shrink_boundary(boundary_coordinates, vehicle_width=0.5)
 
@@ -121,7 +113,7 @@ def gen_path():
     path, length = environment.find_shortest_path(start_coordinates, goal_coordinates)
     path = np.array(path, dtype=np.float32)
     path = path_interpolate(path)
-    return path
+    return path , list_of_holes, boundary_coordinates
 
 '''
 path = gen_path()
