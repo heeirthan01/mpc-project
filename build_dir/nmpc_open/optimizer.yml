@@ -14,11 +14,11 @@ meta:
 solver:
   constraints_tolerance: 0.0001
   lbfgs_memory: 10
-  max_duration_micros: 300000
+  max_duration_micros: 500000
   max_inner_iterations: 500
   max_outer_iterations: 10
-  penalty_weight_update_factor: 5.0
-  tolerance: 0.0001
+  penalty_weight_update_factor: 10.0
+  tolerance: 1.0e-06
 tcp:
   ip: 127.0.0.1
   port: 8333

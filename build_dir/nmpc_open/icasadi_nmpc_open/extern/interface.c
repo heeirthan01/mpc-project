@@ -18,9 +18,9 @@
  *   + version: 0.0.0
  *   + licence: MIT
  * + Problem
- *   + vars: 100
- *   + parameters: 158
- *   + n1: 100
+ *   + vars: 40
+ *   + parameters: 109
+ *   + n1: 400
  *   + n2: 0
  *
  */
@@ -37,19 +37,19 @@
 #include "casadi_memory.h"
 
 /* Number of input variables */
-#define NU_NMPC_OPEN 100
+#define NU_NMPC_OPEN 40
 
 /* Number of static parameters */
-#define NP_NMPC_OPEN 158
+#define NP_NMPC_OPEN 109
 
 /* Dimension of F1 (number of ALM constraints) */
-#define N1_NMPC_OPEN 100
+#define N1_NMPC_OPEN 400
 
 /* Dimension of F2 (number of PM constraints) */
 #define N2_NMPC_OPEN 0
 
 /* Dimension of xi = (c, y) */
-#define NXI_NMPC_OPEN 101
+#define NXI_NMPC_OPEN 401
 
 /* Preconditioning Flag */
 

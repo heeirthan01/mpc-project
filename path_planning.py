@@ -113,7 +113,8 @@ def gen_path(config):
     path, length = environment.find_shortest_path(start_coordinates, goal_coordinates)
     path = np.array(path, dtype=np.float32)
     path = path_interpolate(path)
-    return path , list_of_holes, boundary_coordinates
+    padded_vertices = obstacles_processed
+    return path , list_of_holes, boundary_coordinates, padded_vertices
 
 '''
 path = gen_path()
