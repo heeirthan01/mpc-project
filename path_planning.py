@@ -2,9 +2,13 @@ import os
 os.environ["NUMBA_DISABLE_JIT"] = "1"
 from extremitypathfinder import PolygonEnvironment
 import matplotlib.pyplot as plt
+from matplotlib.patches import Ellipse
 import numpy as np
 import pyclipper
 import yaml
+import math
+from parameters import Parameters
+
 
 SCALE = 1000
 
@@ -62,6 +66,68 @@ def shrink_boundary(boundary, vehicle_width):
     shrunkpath = path_offset(ogpath,-vehicle_width)
     return make_ccw(from_clipper(shrunkpath))
 
+def rotate_object(origin,point,seg_heading):
+    '''
+    Helper for generate dyn obs
+    Inputs
+    origin: first point in segment p1, center of local frame
+    point: point of interest p3 along line we want to convert
+    seg_heading: angle of segmetn wrt global frame
+    '''
+    cx,cy = origin 
+    px,py = point 
+    #Rotate into local frame
+    qx = math.cos(seg_heading) * (px-cx) - math.sin(seg_heading)*(py-cy) + cx
+    qy = math.sin(seg_heading) * (px-cx) - math.cos(seg_heading)*(py-cy) + cy
+
+    return np.array([qx,qy])
+
+def rotate_and_add(p1,p3,seg_heading,addition):
+
+    rot = rotate_object(p1,p3,seg_heading) #rotate and translate into local frame
+    rot[1] += addition #offset perpendicularly to segment (squiglywiggly)
+    rot = rotate_object(np.array([0,0]),rot,-seg_heading) #rotate back into global frame
+
+    return rot + p1 #translation back into 0,0 origin
+
+def gen_dynamic_obstacle(p1,p2,freq,time,amp=1.5):
+    p1 = np.array(p1)
+    p2 = np.array(p2)
+    seg_heading = np.arctan2(p1[1],p2[0]) #segment heading
+    time = np.array(time) 
+    t = abs(np.sin(freq*time)) #time "trajectory"
+    if type(t) == np.ndarray: #check if numpy array
+        t = np.expand_dims(t,1) #ensure (n,1) instead of (n,)
+    p3 = t*p1 + (1-t)*p2
+    add = amp*np.cos(10*freq*time) #the addition vertical sqwig
+
+    return rotate_and_add(p1,p3,seg_heading,add) #return time specific point in global frame
+    
+
+def get_dynobs_paths(dynobs_total,t,p:Parameters):
+    dt = p.dt
+    horizon = p.N_hor
+    time = np.linspace(t,t+horizon*dt,horizon) #time array according to prediction horizon
+    dynobs_paths = []
+    for obs in dynobs_total:
+        p1,p2,freq,x_rad,y_rad, seg_heading = obs #TODO: Engrave obstacle info into .yaml file
+        x_rad = x_rad + p.r_safe/2 + p.vehicle_margin #Expand object based on vehicle width and margin
+        y_rad = y_rad + p.r_safe/2 + p.vehicle_margin
+        obap = [(*gen_dynamic_obstacle(p1,p2,freq,t),x_rad,y_rad,seg_heading) for t in time] #the 5 time based parameters mentioned in paper
+        dynobs_paths.append(obap)
+    
+    return dynobs_paths
+
+def get_dynobs_path_at_t(dynobs_total,t,p:Parameters):
+    dynobs_paths = []
+    for obs in dynobs_total:
+        p1,p2,freq,x_rad,y_rad, seg_heading = obs #TODO: Engrave obstacle info into .yaml file
+        x_rad = x_rad + p.r_safe/2 + p.vehicle_margin #Expand object based on vehicle width and margin
+        y_rad = y_rad + p.r_safe/2 + p.vehicle_margin
+        x,y = gen_dynamic_obstacle(p1,p2,freq,t)
+        dynobs_paths.append((x,y,x_rad,y_rad,seg_heading))
+    return dynobs_paths
+
 def path_interpolate(path,ds = 0.1):
     '''
     path = 2d array of shape (N,2)
@@ -96,11 +162,12 @@ def gen_path(config):
     #Main part
     environment = PolygonEnvironment()
 
-    with open('params.yaml','r') as file:
+    with open('obsbounds.yaml','r') as file:
         config_data = yaml.safe_load(file)
 
     boundary_coordinates = config_data[config]['boundary_coordinates']
     list_of_holes = config_data[config]['list_of_holes']
+    #dynobs = config_data[config]['dynobs']
     
     obstacles_processed = inflate_obstacles(list_of_holes, 0.5)
     boundary_processed = shrink_boundary(boundary_coordinates, vehicle_width=0.5)
@@ -116,23 +183,23 @@ def gen_path(config):
     padded_vertices = obstacles_processed
     return path , list_of_holes, boundary_coordinates, padded_vertices
 
-'''
-path = gen_path()
-#print("Path length:", length)
-print("Path:", path)
-plt.figure()
-plt.plot(path[:, 0], path[:, 1], "r-")
-plt.plot(start_coordinates[0], start_coordinates[1], "go")
-plt.plot(goal_coordinates[0], goal_coordinates[1], "bx")
-plt.plot(*zip(*boundary_coordinates, boundary_coordinates[0]), "k-")
-for hole in list_of_holes:
-    plt.plot(*zip(*hole, hole[0]), "k-")
-plt.axis("equal")
-plt.show()
+def generate_reftrajectory(p:Parameters,init_path):
+    x_ref = init_path[:,0]
+    y_ref = init_path[:,1] 
+    dx = np.diff(x_ref,prepend=init_path[0,0])
+    dy = np.diff(y_ref,prepend=init_path[0,1])
+    theta_ref = np.unwrap(np.arctan2(dy,dx))
+    return np.vstack((x_ref, y_ref, theta_ref)).T
 
-path_interp = path_interpolate(path)
-print(f"Interpolated path length: {len(path_interp)} points")
-plt.figure()
-plt.plot(path_interp[:, 0], path_interp[:, 1], "r-")
-plt.show()
+'''
+# Working test animation of obstacles
+config = 'test_config2'
+path, obstacles, boundary, padded_obstacles = gen_path(config)
+testp = Parameters(obstacles,boundary)
+dynobslist = [([1.0, 4.0], [2.0, 7.0], 0.1, 0.2, 0.5, 0.1)]
+t = 500
+obstacles = get_dynobs_paths(dynobslist,t,testp)
+reps = 50
+for i in range(reps):
+    animate_dymobs(obstacles,boundary,testp)
 '''

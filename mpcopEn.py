@@ -1,53 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.patches import Ellipse
+from matplotlib import animation
 import casadi as ca
 import opengen as og
 import path_planning
+from parameters import Parameters
+import plotting
 import yaml
 
-class Parameters:
-    def __init__(self, obstacles,boundaries):
-        self.vel_min = -0.5
-        self.vel_max = 1.5
-        self.ang_vel_min = -0.5
-        self.ang_vel_max = 0.5
-        self.ang_acc_max = 3.0
-        self.ang_acc_min = -3.0
-        self.lin_acc_max = 1
-        self.lin_acc_min = -1
-        self.N_hor = 20
-        self.dt = 0.1
-        
-        # Weights 
-        self.lin_vel_pen = 1.0
-        self.lin_acc_pen = 10.0
-        self.ang_vel_pen = 1.0
-        self.ang_acc_pen = 5.0
-        self.pos_dev = 1.0
-        self.vel_dev = 10.0
-        self.heading_dev = 1.0 
-        self.termcost_pos = 200.0
-        self.termcost_heading = 50.0 
-
-        #Helpers 
-        self.n_states = 3
-        self.n_cmds = 2
-
-        #Obstacles and boundaries
-        self.obstacles = obstacles
-        self.boundaries = boundaries
-        self.r_safe = 0.5
-        self.max_vert = 20 #max no of vertices
-        self.w_obs = 1e6 #obstacle weigth
-
-
-def generate_reftrajectory(p:Parameters,init_path):
-    x_ref = init_path[:,0]
-    y_ref = init_path[:,1] 
-    dx = np.diff(x_ref,prepend=init_path[0,0])
-    dy = np.diff(y_ref,prepend=init_path[0,1])
-    theta_ref = np.unwrap(np.arctan2(dy,dx))
-    return np.vstack((x_ref, y_ref, theta_ref)).T
 
 def dyn_prop(x,u, p:Parameters):
     xp,yp,thetap = x[0],x[1],x[2]
@@ -212,28 +173,10 @@ def pack_params(x0, u_prev, xref,p: Parameters): #Xref is N+1,3
         np.asarray([p.r_safe],dtype=np.float64)
     ])
 
-def plot_trajectory(ref_trajectory):
-    plt.figure(figsize=(10, 6))
-    plt.plot(ref_trajectory[:, 0], ref_trajectory[:, 1], 'r--', label='Reference Trajectory')
-    #plt.plot(states[:, 0], states[:, 1], 'b-', label='Actual Trajectory')
-    plt.xlabel('X Position')
-    plt.ylabel('Y Position')
-    plt.title('Trajectory Comparison')
-    plt.legend()
-    plt.axis('equal')
-    plt.grid()
-    plt.show()
-
-
-# ---------- Main Simulation Loop ----------
-if __name__ == '__main__':
-    config = 'test_config2'
-    path, obstacles, boundary, padded_obstacles = path_planning.gen_path(config)
-    p = Parameters(obstacles,boundary)
+def run_mpc(p,ref_trajectory):
     build_dir, name = open_solver(p)
+    obstacles = p.obstacles
     mng = start_manager(build_dir, name)
-
-    ref_trajectory = generate_reftrajectory(p,path)
     print(f'No of waypoints {ref_trajectory.shape}')
     x = ref_trajectory[0] # Initial state
     u_prev = np.array([0.0, 0.0]) # Initial previous command
@@ -305,39 +248,8 @@ if __name__ == '__main__':
     print("Done. Collected", len(sim_traj), "states.")
 
 
-for element in crash_test:
-    if element < 0.5:
-        print(f'crashed at {element}')
+    for element in crash_test:
+        if element < 0.5:
+            print(f'crashed at {element}')
 
-# Plot simulated trajectory
-plt.figure()
-sim_traj = np.array(sim_traj)
-plt.plot(sim_traj[:,0], sim_traj[:,1],label='Simulated Trajectory')
-plt.plot(ref_trajectory[:,0], ref_trajectory[:,1], 'r--', label='Reference Trajectory')
-plt.plot(*zip(*boundary, boundary[0]), "k-")
-for hole in obstacles:
-    plt.plot(*zip(*hole, hole[0]), "k-")
-    # Plot a circle of radius 0.5 around each vertex of the hole
-    for vertex in hole:
-        circle = plt.Circle(vertex, 0.5, color='g', fill=False, linestyle='--', linewidth=1)
-        plt.gca().add_patch(circle)
-for hole in padded_obstacles:
-    plt.plot(*zip(*hole, hole[0]), "k-")    
-plt.xlabel('X Position')
-plt.ylabel('Y Position')
-plt.title('Simulated Trajectory')
-plt.legend()
-plt.axis('equal')
-plt.grid()
-plt.show()
-
-#Debugiging COmmands
-plt.figure()
-plt.plot(commands[:,0], label='v')
-plt.legend(); plt.grid(); plt.show()
-
-plt.figure()
-plt.plot(commands[:,1], label='omega')
-plt.legend(); plt.grid(); plt.show()
-
-print(f'Initial pos sim {sim_traj[0]} and initial pos ref {ref_trajectory[0]}')
+    return sim_traj
