@@ -19,8 +19,8 @@
  *   + licence: MIT
  * + Problem
  *   + vars: 40
- *   + parameters: 109
- *   + n1: 400
+ *   + parameters: 209
+ *   + n1: 420
  *   + n2: 0
  *
  */
@@ -40,16 +40,16 @@
 #define NU_NMPC_OPEN 40
 
 /* Number of static parameters */
-#define NP_NMPC_OPEN 109
+#define NP_NMPC_OPEN 209
 
 /* Dimension of F1 (number of ALM constraints) */
-#define N1_NMPC_OPEN 400
+#define N1_NMPC_OPEN 420
 
 /* Dimension of F2 (number of PM constraints) */
 #define N2_NMPC_OPEN 0
 
 /* Dimension of xi = (c, y) */
-#define NXI_NMPC_OPEN 401
+#define NXI_NMPC_OPEN 421
 
 /* Preconditioning Flag */
 

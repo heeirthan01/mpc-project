@@ -77,8 +77,8 @@ def rotate_object(origin,point,seg_heading):
     cx,cy = origin 
     px,py = point 
     #Rotate into local frame
-    qx = math.cos(seg_heading) * (px-cx) - math.sin(seg_heading)*(py-cy) + cx
-    qy = math.sin(seg_heading) * (px-cx) - math.cos(seg_heading)*(py-cy) + cy
+    qx = math.cos(seg_heading) * (px-cx) - math.sin(seg_heading)*(py-cy)
+    qy = math.sin(seg_heading) * (px-cx) + math.cos(seg_heading)*(py-cy) 
 
     return np.array([qx,qy])
 
@@ -93,15 +93,17 @@ def rotate_and_add(p1,p3,seg_heading,addition):
 def gen_dynamic_obstacle(p1,p2,freq,time,amp=1.5):
     p1 = np.array(p1)
     p2 = np.array(p2)
-    seg_heading = np.arctan2(p1[1],p2[0]) #segment heading
+    dp = p2 - p1
+    seg_heading = np.arctan2(dp[1],dp[0]) #segment heading
     time = np.array(time) 
     t = abs(np.sin(freq*time)) #time "trajectory"
     if type(t) == np.ndarray: #check if numpy array
         t = np.expand_dims(t,1) #ensure (n,1) instead of (n,)
     p3 = t*p1 + (1-t)*p2
     add = amp*np.cos(10*freq*time) #the addition vertical sqwig
-
-    return rotate_and_add(p1,p3,seg_heading,add) #return time specific point in global frame
+    new = rotate_and_add(p1,p3,seg_heading,add)
+    
+    return new #return time specific point in global frame
     
 
 def get_dynobs_paths(dynobs_total,t,p:Parameters):
@@ -113,7 +115,7 @@ def get_dynobs_paths(dynobs_total,t,p:Parameters):
         p1,p2,freq,x_rad,y_rad, seg_heading = obs #TODO: Engrave obstacle info into .yaml file
         x_rad = x_rad + p.r_safe/2 + p.vehicle_margin #Expand object based on vehicle width and margin
         y_rad = y_rad + p.r_safe/2 + p.vehicle_margin
-        obap = [(*gen_dynamic_obstacle(p1,p2,freq,t),x_rad,y_rad,seg_heading) for t in time] #the 5 time based parameters mentioned in paper
+        obap = [*gen_dynamic_obstacle(p1,p2,freq,t),x_rad,y_rad,seg_heading] #the 5 time based parameters mentioned in paper
         dynobs_paths.append(obap)
     
     return dynobs_paths
@@ -125,6 +127,7 @@ def get_dynobs_path_at_t(dynobs_total,t,p:Parameters):
         x_rad = x_rad + p.r_safe/2 + p.vehicle_margin #Expand object based on vehicle width and margin
         y_rad = y_rad + p.r_safe/2 + p.vehicle_margin
         x,y = gen_dynamic_obstacle(p1,p2,freq,t)
+        #print(f'Generated dynamic obstacle at {x}, {y}')
         dynobs_paths.append((x,y,x_rad,y_rad,seg_heading))
     return dynobs_paths
 

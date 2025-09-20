@@ -23,7 +23,7 @@
  */
 #define COST_SZ_ARG_NMPC_OPEN 3
 #define COST_SZ_IW_NMPC_OPEN 0
-#define COST_SZ_W_NMPC_OPEN 89
+#define COST_SZ_W_NMPC_OPEN 190
 #define COST_SZ_RES_NMPC_OPEN 1
 
 /*
@@ -31,7 +31,7 @@
  */
 #define GRAD_SZ_ARG_NMPC_OPEN 3
 #define GRAD_SZ_IW_NMPC_OPEN 0
-#define GRAD_SZ_W_NMPC_OPEN 949
+#define GRAD_SZ_W_NMPC_OPEN 1105
 #define GRAD_SZ_RES_NMPC_OPEN 1
 
 /*
@@ -39,7 +39,7 @@
  */
 #define F1_SZ_ARG_NMPC_OPEN 2
 #define F1_SZ_IW_NMPC_OPEN 0
-#define F1_SZ_W_NMPC_OPEN 50
+#define F1_SZ_W_NMPC_OPEN 52
 #define F1_SZ_RES_NMPC_OPEN 1
 
 /*
@@ -55,7 +55,7 @@
  */
 #define W_COST_SZ_ARG_NMPC_OPEN 2
 #define W_COST_SZ_IW_NMPC_OPEN 0
-#define W_COST_SZ_W_NMPC_OPEN 184
+#define W_COST_SZ_W_NMPC_OPEN 261
 #define W_COST_SZ_RES_NMPC_OPEN 1
 
 /*
@@ -64,7 +64,7 @@
  */
 #define W1_SZ_ARG_NMPC_OPEN 2
 #define W1_SZ_IW_NMPC_OPEN 0
-#define W1_SZ_W_NMPC_OPEN 124
+#define W1_SZ_W_NMPC_OPEN 128
 #define W1_SZ_RES_NMPC_OPEN 1
 
 /*
@@ -81,5 +81,5 @@
  */
 #define INIT_PENALTY_SZ_ARG_NMPC_OPEN 2
 #define INIT_PENALTY_SZ_IW_NMPC_OPEN 0
-#define INIT_PENALTY_SZ_W_NMPC_OPEN 90
+#define INIT_PENALTY_SZ_W_NMPC_OPEN 190
 #define INIT_PENALTY_SZ_RES_NMPC_OPEN 1

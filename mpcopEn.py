@@ -29,17 +29,22 @@ def angle_wrapper(angle):
 
 
 def open_solver(p : Parameters,build_dir="build_dir", name="nmpc_open"):
+    
+    #Parameters
     no_x,no_u,N,dt = p.n_states, p.n_cmds, p.N_hor, p.dt
-    obstacles_stat = p.obstacles
-    boundary = p.boundaries
-    w_obs = p.w_obs
+    no_dynobs = p.n_dynobs
+    dynparams = 5 #x,y, xrad,yrad, angle
+    dyn_obs = dynparams*N #params per obstacle over horizon
+    dyn_tot = dyn_obs*no_dynobs #params for all dynobs over horizon
+
     # Define optimization variables
     u = ca.SX.sym('u', no_u*N)  # 2 commands for each time step (v, omega)
-    z = ca.SX.sym('x',no_x + no_u + no_x*(N+1) + 2*p.max_vert + 1) # vector with x0, u_prev for rate limits, ref state vector along tajectory, max number of vertices
+    z = ca.SX.sym('x',no_x + no_u + no_x*(N+1) + 2*p.max_vert + 1 + dyn_tot) # vector with x0, u_prev for rate limits, ref state vector along tajectory, stat and dyn obs
     x0 = z[0:3] #initial state
     u_prev = z[3:5] #Previous command v & w
     ref = ca.reshape(z[5:5 + (N+1)*no_x],no_x,N+1) #ref traj with final pos and heading in 3D
-    #Obstacle defintions
+    
+    #Static obstacle defintions
     max_vert = p.max_vert
     verts_flat_start = 5 + (N+1)*no_x
     verts_flat_end = verts_flat_start+2*max_vert
@@ -47,6 +52,10 @@ def open_solver(p : Parameters,build_dir="build_dir", name="nmpc_open"):
     verts = ca.reshape(verts_flat,max_vert,2)
     r_safe = z[verts_flat_end]
     ob_terms = []
+
+    #Dynamic obstacles
+    base = verts_flat_end + 1
+    end_dynobs = base + dyn_tot
 
     #Initialize weights
     Q = ca.diag(ca.SX([p.pos_dev, p.pos_dev, p.heading_dev]))  # State deviation weights
@@ -66,7 +75,7 @@ def open_solver(p : Parameters,build_dir="build_dir", name="nmpc_open"):
     J += ca.mtimes([ca.vertcat(dv0,dw0).T, Ra, ca.vertcat(dv0,dw0)])
     
     for i in range(N):
-        #Obstacle constraint at each stage
+        #Static obstacle constraint at each stage
         '''
         #pen constraint structure
         for j in range(max_vert):
@@ -84,6 +93,30 @@ def open_solver(p : Parameters,build_dir="build_dir", name="nmpc_open"):
             ob_terms.append(dist) 
             #J += w_obs *ca.fmax(0,dist)
         
+        #Dynamic obstacle constraints
+        #Assigned space to the 5 timeparameters, has same amount of elements as there are obstacles
+        xs_dyn = z[base + i*dynparams:end_dynobs:dyn_obs]
+        ys_dyn = z[base + i*dynparams + 1:end_dynobs:dyn_obs]
+        x_rad = z[base + i*dynparams + 2:end_dynobs:dyn_obs]
+        y_rad = z[base + i*dynparams + 3:end_dynobs:dyn_obs]
+        angle = z[base + i*dynparams + 4:end_dynobs:dyn_obs]
+
+        xdiff = x[0] - xs_dyn
+        ydiff = x[1] - ys_dyn
+
+        in_ellipse = 1 - ((xdiff*ca.cos(angle) + ydiff*ca.sin(angle))**2) / (x_rad**2) - ((xdiff*ca.sin(angle)-ydiff*ca.cos(angle))**2) / (y_rad**2)
+        for k in range(no_dynobs): #in_ellipse is vector of length dynobs
+            ob_terms.append(in_ellipse[k])
+        
+        #Optional: Trying to add a soft constraint on dynamic obstacles
+        m_soft = 0.50
+        xrad_soft = x_rad + m_soft
+        yrad_soft = y_rad + m_soft
+        in_ellipse_soft = in_ellipse = 1 - ((xdiff*ca.cos(angle) + ydiff*ca.sin(angle))**2) / (xrad_soft**2) - ((xdiff*ca.sin(angle)-ydiff*ca.cos(angle))**2) / (yrad_soft**2)
+
+        w_soft = 50
+        J += w_soft * ca.sumsqr(ca.fmax(0,in_ellipse_soft))
+
         #Stage cost
         xref = ref[:,i]
         err = ca.vertcat(x[0]-xref[0], x[1]-xref[1], angle_wrapper(x[2]-xref[2]))
@@ -154,7 +187,9 @@ def start_manager(build_dir, name):
     mng.start()
     return mng
 
-def pack_params(x0, u_prev, xref,p: Parameters): #Xref is N+1,3
+def pack_params(x0, u_prev, xref,p: Parameters,t_curr): #Xref is N+1,3
+    dt = p.dt
+    N = p.N_hor
     stat_v = np.vstack([np.asarray(h, dtype=np.float64) for h in p.obstacles])
     svlen = min(len(stat_v), p.max_vert)
     padded = np.zeros((p.max_vert,2), dtype=np.float64) #initialize vert matrix
@@ -165,12 +200,32 @@ def pack_params(x0, u_prev, xref,p: Parameters): #Xref is N+1,3
     
     verts_flat = padded.reshape(-1) #2*max_vert array
     
+    #dynamic obstacles
+    dynobs_list = p.dynobs
+    n_dynobs = p.n_dynobs
+    time = t_curr + dt*np.arange(N)
+    dyn_pobs = [] #block per obstacle Nx5
+    for (p1,p2,freq,xrad,yrad,angle) in dynobs_list:
+        xs = np.empty(N,dtype=np.float64)
+        ys = np.empty(N,dtype=np.float64)
+        for k,t in enumerate(time):
+            x,y = path_planning.gen_dynamic_obstacle(p1,p2,freq,t)
+            xs[k],ys[k] = x,y
+        block = np.column_stack([xs,ys,
+                                 np.full(N,xrad,dtype=np.float64),
+                                 np.full(N,yrad,dtype=np.float64),
+                                 np.full(N,angle,dtype=np.float64)])
+        dyn_pobs.append(block.reshape(-1))
+
+    dyn_flat = np.concatenate(dyn_pobs) if dyn_pobs else np.array([],dtype=np.float64)
+
     return np.concatenate([
         np.asarray(x0, dtype=np.float64),
         np.asarray(u_prev, dtype=np.float64),
         np.asarray(xref, dtype=np.float64).reshape(-1),
         verts_flat,
-        np.asarray([p.r_safe],dtype=np.float64)
+        np.asarray([p.r_safe],dtype=np.float64),
+        dyn_flat
     ])
 
 def run_mpc(p,ref_trajectory):
@@ -198,7 +253,9 @@ def run_mpc(p,ref_trajectory):
             # Pad with last state
             seg = np.vstack([seg,np.repeat(seg[-1][None,:],p.N_hor + 1 - seg.shape[0],axis=0)])
         static_vertices = np.vstack([np.asarray(hole,dtype=np.float64) for hole in obstacles])
-        z = pack_params(x, u_prev, seg,p) # z for solver
+        t_lead = 2.0 * p.dt #pretend obstacle is further ahead than actual
+        t_curr = i*p.dt + t_lead
+        z = pack_params(x, u_prev, seg,p,t_curr) # z for solver
 
         sol = mng.call(z)
         if not sol.is_ok():
@@ -248,8 +305,8 @@ def run_mpc(p,ref_trajectory):
     print("Done. Collected", len(sim_traj), "states.")
 
 
-    for element in crash_test:
-        if element < 0.5:
-            print(f'crashed at {element}')
+    # for element in crash_test:
+    #     if element < 0.5:
+    #         print(f'crashed at {element}')
 
-    return sim_traj
+    return sim_traj, commands

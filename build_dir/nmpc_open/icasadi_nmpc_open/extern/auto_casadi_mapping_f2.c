@@ -50,10 +50,10 @@ extern "C" {
 #endif
 
 static const casadi_int casadi_s0[3] = {40, 1, 1};
-static const casadi_int casadi_s1[3] = {510, 1, 1};
+static const casadi_int casadi_s1[3] = {630, 1, 1};
 static const casadi_int casadi_s2[3] = {1, 1, 1};
 
-/* open_mapping_f2_nmpc_open:(i0[40],i1[510])->(o0) */
+/* open_mapping_f2_nmpc_open:(i0[40],i1[630])->(o0) */
 static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
   casadi_real a0;
   a0=0.;
